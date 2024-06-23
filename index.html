@@ -17,8 +17,12 @@
       <ul class="example__notification-list">
         <li class="example__notification-item">
           <article class="notification-card">
-            <div class="notification-card__progress-bar round-progress-bar">
-              0/7
+            <div class="notification-card__progress-bar round-progress-bar" style="--progress: 2">
+              <svg class="round-progress-bar__progress-visualisation" width="62" height="62" viewBox="0 0 62 62">
+                <circle class="round-progress-bar__progress-track" cx="31" cy="31" r="30" />
+                <circle class="round-progress-bar__current-progress" cx="31" cy="31" r="30" />
+              </svg>
+              <p class="round-progress-bar__progress-text"><span class="round-progress-bar__progress-ready-steps">0</span>/<span class="round-progress-bar__progress-total-steps">7</span></p>
             </div>
             <div class="notification-card__details">
               <ul class="notification-card__tags">
